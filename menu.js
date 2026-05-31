@@ -1,0 +1,17 @@
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+menuBtn.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+});
+
+overlay.addEventListener("click", () => {
+
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+
+});

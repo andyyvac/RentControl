@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>RentControl</title>
+</head>
+<body>
+    <header>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="arrendador.html">Inicio</a>
+        <a href="inmueble_a.html">Inmuebles</a>
+        <a href="reporte_mantenimiento.html">Reporte de mantenimiento</a>
+        <a href="pagos_a.html">Registrar pagos</a>
+        <a href="cuenta_a.html">Cuenta</a>
+        <a href="iniciar_sesion.html">Cerrar sesión</a>
+
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+</header>
+    <main class="lateral">
+        <section class="contenido">
+            <h1>Registrar pagos</h1>
+            <form action="historial_pagos_a.html">
+                <label for="">Nombre del arrendatario</label>
+                <input type="text">
+
+                <label for="">Monto a pagar</label>
+                <input type="number">
+
+                <label for="">Fecha</label>
+                <input type="date">
+
+                <label for="">Periodo de tiempo</label>
+                <input type="text">
+
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+
+        <img src="img/documento.png" class="der">
+
+        <script src="menu.js"></script>
+    </main>
+    <footer>
+        <p>RentControl. CDMX, México. 2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>RentControl</title>
+</head>
+<body>
+    <header>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="inquilino.html">Inicio</a>
+        <a href="inmueble_i.html">Inmuebles</a>
+        <a href="reporte.html">Reporte de mantenimiento</a>
+        <a href="proceso_mantenimiento.html">Proceso de mantenimiento</a>
+        <a href="pagos_i.html">Consultar historial de pagos</a>
+        <a href="cuenta_i.html">Cuenta</a>
+        <a href="iniciar_sesion.html">Cerrar sesión</a>
+
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+</header>
+    <main class="lateral">
+        <img src="img/imagen.png" class="izq">
+
+        <section class="contenido">
+            <form action="proceso_mantenimiento.html">
+                <label for="">Zona del reporte</label>
+                <select name="" id="zona">
+                    <option value="">Seleccione</option>
+                    <option value="baño">Baño</option>
+                    <option value="cocina">Cocina</option>
+                    <option value="habitaciones">Habitaciones</option>
+                    <option value="sala">Sala / Comedor</option>
+                    <option value="lavado">Área de lavado</option>
+                    <option value="comun">Área comun</option>
+                    <option value="fachada">Fachada</option>
+                </select>
+
+                <label for="">Fecha del reporte</label>
+                <input type="date">
+
+                <label for="">Tipo de reporte</label>
+                <select name="" id="tipo_reporte">
+                </select> 
+
+                <label for="">Descripción del reporte</label>
+                <input type="text">
+
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+
+        <script src="menu.js"></script>
+        <script src="reporte.js"></script>
+
+    </main>
+    <footer>
+        <p>RentControl. CDMX, México. 2026</p>
+    </footer>
+</body>
+</html>
